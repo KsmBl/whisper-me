@@ -1,0 +1,189 @@
+@font-face
+{
+	font-family: 'RobotoMono';
+	src: url('/publicdata/Fonts/RobotoMono/RobotoMono-Medium.ttf') format('truetype');
+}
+
+body
+{
+	font-family: 'RobotoMono', sans-serif;
+	color: white;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	background: url("/publicdata/images/background.png");
+	background-attachment: scroll;
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+	backdrop-filter: blur(20px);
+}
+
+@media all and (max-width: 1100px)
+{
+	#left, #right
+	{
+		display: none;
+		h4
+		{
+		}
+	}
+
+	#center
+	{
+		h2, h3, h4
+		{
+			color: #575141;
+			text-align: center;
+		}
+
+		p
+		{
+			max-width: 90%;
+			margin-left: 5%;
+			color: #2b1c0e;
+		}
+	}
+
+	.contactcontainer
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img
+		{
+			width: 50px;
+		}
+
+		p
+		{
+		}
+
+		a, p
+		{
+			color: black;
+		}
+	}
+
+	.sideimage
+	{
+	}
+
+	.mainimage
+	{
+		width: 90%;
+		margin-left: 5%;
+		border-radius: 7%;
+		box-shadow: 0px 0px 20px 2px #777;
+	}
+
+	#femboyimagebox
+	{
+		display: flex;
+	}
+}
+
+@media all and (min-width: 1100px)
+{
+	#left, #right
+	{
+		width: 300px;
+
+		h4
+		{
+			color: black;
+			text-align: center;
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
+	}
+
+	#center
+	{
+		width: calc(100% - 600px);
+		background-color: #d3d9d2;
+		box-shadow: 6px 18px 31px 18px rgba(0,0,0,0.7);
+
+		h2, h3, h4
+		{
+			text-align: center;
+			color: #575141;
+		}
+
+		p
+		{
+			max-width: 100%;
+			text-align: center;
+			color: #2b1c0e;
+			padding: 0px 15px 0px 15px;
+		}
+	}
+
+	#modeswitcher
+	{
+		img
+		{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 100px;
+			cursor: pointer;
+		}
+	}
+
+	.contactcontainer
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img
+		{
+			width: 50px;
+			height: 50px;
+		}
+
+		p
+		{
+			padding: 0px;
+		}
+
+		a, p
+		{
+			color: black;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: 5px;
+		}
+	}
+
+	.sideimage
+	{
+		margin-top: 40px;
+		border-radius: 50%;
+		margin-left: 50px;
+		box-shadow: 0px 0px 20px 2px #777;
+	}
+
+	.mainimage
+	{
+		margin-top: 30px;
+		display: block;
+		margin: auto;
+		max-width: 60%;
+		border-radius: 15%;
+		box-shadow: 0px 0px 20px 2px #777;
+	}
+
+	#femboyimagebox
+	{
+		display: flex;
+	}
+}
+
+.dark-mode
+{
+	background-color: #333;
+	color: #ffffff;
+}
